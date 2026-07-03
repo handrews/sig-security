@@ -20,10 +20,5 @@
   },
   "dependencies": {
     "@oai/build-infra": "file:../build-infra"
-  },
-  "devDependencies": {
-    "@umbrelladocs/linkspector": "^0.5.3",
-    "markdownlint-cli2": "^0.22.1",
-    "respec": "37.1.0"
   }
 }
