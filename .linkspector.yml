@@ -1,0 +1,8 @@
+files:
+  - src/security.md
+  - 2021-05-19-New-Security-Definitions.md
+  - EDITORS.md
+  - README.md
+ignorePatterns:
+  - pattern: 'clientdomain.com'
+  - pattern: 'example.org'

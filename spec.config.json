@@ -1,0 +1,49 @@
+{
+  "slug": "security",
+  "shortName": "Security",
+  "specSrc": "security.md",
+  "abstractQuestion": "What is the Security Specification?",
+  "abstractText": "The Security Specification defines reusable security scheme concepts for OpenAPI Initiative specifications.",
+  "metaDescription": "OpenAPI Initiative Security Specification.",
+  "copyright": "the Linux Foundation",
+  "edDraftURI": "https://github.com/OAI/sig-security/",
+  "logo": {
+    "src": "https://raw.githubusercontent.com/OAI/OpenAPI-Style-Guide/master/graphics/bitmap/OpenAPI_Logo_Pantone.png",
+    "alt": "OpenAPI Initiative",
+    "height": 48,
+    "url": "https://openapis.org/"
+  },
+  "participateLinks": [
+    {
+      "value": "GitHub OAI/sig-security",
+      "href": "https://github.com/OAI/sig-security/"
+    },
+    {
+      "value": "File a bug",
+      "href": "https://github.com/OAI/sig-security/issues"
+    },
+    {
+      "value": "Pull requests",
+      "href": "https://github.com/OAI/sig-security/pulls"
+    }
+  ],
+  "release": {
+    "sourcePath": "src/security.md",
+    "releaseHistoryNote": "$releaseType of the Security Specification $version",
+    "removeOnReleaseBranch": [
+      "src",
+      "tests/schema/pass",
+      "tests/schema/fail",
+      "tests/schema/schema.test.mjs"
+    ],
+    "schemaVersionRewrite": {
+      "enabled": true,
+      "paths": [
+        "src/schemas/validation/*.yaml",
+        "tests/schema/schema.test.mjs",
+        "tests/schema/pass/*.yaml",
+        "tests/schema/fail/*.yaml"
+      ]
+    }
+  }
+}
