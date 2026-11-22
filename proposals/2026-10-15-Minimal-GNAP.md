@@ -36,7 +36,7 @@ Full disclosure: the author of this proposal is one of the grantees.
 
 Minimal GNAP support using access reference strings can be enabled
 by adding a Security Scheme Object `type: gnap` with an optional
-`gnapAsUri` field, and allowing GNAP access strings in the Security
+`gnapAsUri` field, and allowing GNAP access reference strings in the Security
 Requirement Object in place of OAuth scopes.
 
 Whether the endpoint is defined statically in `gnapAsUri` or discovered
@@ -53,13 +53,13 @@ Authorization Requests (also RAR, which was intentional).
 This example shows four possible configurations, the details of which
 are explained after the example:
 
-* Fully dynamic, where both the AS URI and the access string are
+* Fully dynamic, where both the AS URI and the access reference string are
   discovered via `WWW-Authenticate`.
-* Static AS, dynamic access string, where the `WWW-Authenticate`
+* Static AS, dynamic access reference string, where the `WWW-Authenticate`
   challenge needs to provide `access` but might omit `as_uri`.
 * Dynamic AS, static access, where the `WWW-Authenticate` challenge needs
   to provide `as_uri` but is expected to omit the `access` parameter.
-* Fully static, where both the AS URI and the access string are
+* Fully static, where both the AS URI and the access reference string are
   provided in the OAD.
 
 ```yaml
@@ -190,14 +190,14 @@ or exchanged in-band.
 
 #### Security Requirement Object Examples
 
-##### GNAP with dynamic access strings
+##### GNAP with dynamic access reference strings
 
 ```yaml
 security:
 - gnap: []
 ```
 
-##### GNAP with static access strings
+##### GNAP with static access reference strings
 
 ```yaml
 security:
